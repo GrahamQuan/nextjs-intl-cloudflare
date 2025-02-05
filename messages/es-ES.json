@@ -1,0 +1,32 @@
+{
+  "home": {
+    "title": "Inicio | nextjs-intl-cloudflare",
+    "description": "Página de inicio"
+  },
+  "about": {
+    "title": "Acerca de | nextjs-intl-cloudflare",
+    "description": "Página de Acerca de"
+  },
+  "contact": {
+    "title": "Contacto | nextjs-intl-cloudflare",
+    "description": "Página de Contacto"
+  },
+  "metadata": {
+    "home": {
+      "title": "nextjs-intl-cloudflare",
+      "description": "nextjs-intl-cloudflare",
+      "keywords": "nextjs-intl-cloudflare",
+      "openGraph": {
+        "title": "nextjs-intl-cloudflare",
+        "description": "nextjs-intl-cloudflare",
+        "siteName": "nextjs-intl-cloudflare"
+      },
+      "twitter": {
+        "title": "nextjs-intl-cloudflare",
+        "description": "nextjs-intl-cloudflare",
+        "site": "nextjs-intl-cloudflare",
+        "creator": "nextjs-intl-cloudflare"
+      }
+    }
+  }
+}

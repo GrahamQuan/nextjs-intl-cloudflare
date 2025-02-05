@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title": "Home | nextjs-intl-cloudflare",
+    "description": "Home page"
+  },
+  "about": {
+    "title": "About | nextjs-intl-cloudflare",
+    "description": "About page"
+  },
+  "contact": {
+    "title": "Contact | nextjs-intl-cloudflare",
+    "description": "Contact page"
+  },
+  "metadata": {
+    "home": {
+      "title": "nextjs-intl-cloudflare",
+      "description": "nextjs-intl-cloudflare"
+    },
+    "about": {
+      "title": "nextjs-intl-cloudflare",
+      "description": "nextjs-intl-cloudflare"
+    },
+    "contact": {
+      "title": "nextjs-intl-cloudflare",
+      "description": "nextjs-intl-cloudflare contact page"
+    }
+  }
+}

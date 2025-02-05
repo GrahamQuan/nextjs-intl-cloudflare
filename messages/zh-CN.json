@@ -1,0 +1,32 @@
+{
+  "home": {
+    "title": "首页 | nextjs-intl-cloudflare",
+    "description": "首页"
+  },
+  "about": {
+    "title": "关于 | nextjs-intl-cloudflare",
+    "description": "关于页面"
+  },
+  "contact": {
+    "title": "联系 | nextjs-intl-cloudflare",
+    "description": "联系页面"
+  },
+  "metadata": {
+    "home": {
+      "title": "nextjs-intl-cloudflare",
+      "description": "nextjs-intl-cloudflare",
+      "keywords": "nextjs-intl-cloudflare",
+      "openGraph": {
+        "title": "nextjs-intl-cloudflare",
+        "description": "nextjs-intl-cloudflare",
+        "siteName": "nextjs-intl-cloudflare"
+      },
+      "twitter": {
+        "title": "nextjs-intl-cloudflare",
+        "description": "nextjs-intl-cloudflare",
+        "site": "nextjs-intl-cloudflare",
+        "creator": "nextjs-intl-cloudflare"
+      }
+    }
+  }
+}
