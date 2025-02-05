@@ -3,6 +3,11 @@ import './globals.css';
 import Navigation from '@/components/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
+import dynamic from 'next/dynamic';
+
+const TopLoadingBar = dynamic(() => import('@/components/top-loading-bar'), {
+  ssr: false,
+});
 
 export async function generateMetadata({
   params: { locale },
@@ -33,6 +38,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className='text-white bg-black min-h-screen max-w-5xl mx-auto w-full'>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <TopLoadingBar />
           <Navigation />
           {children}
         </NextIntlClientProvider>
