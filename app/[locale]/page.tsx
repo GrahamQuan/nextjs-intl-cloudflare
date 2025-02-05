@@ -8,6 +8,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
   return (
     <div>
       <h1>{t('title')}</h1>
+      <p>test ci</p>
     </div>
   );
 }
