@@ -1,5 +1,8 @@
+import { PUBLIC_BASE_URL } from '@/lib/env';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+
+export const runtime = 'edge';
 
 export async function generateMetadata({
   params: { locale },
@@ -8,7 +11,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({
     locale,
-    namespace: 'Metadata.contact',
+    namespace: 'metadata.contact',
   });
 
   return {
@@ -23,7 +26,7 @@ export default async function Page() {
   return (
     <div>
       <h1>{t('title')}</h1>
-      <p>{process.env.NEXT_PUBLIC_SITE_URL}</p>
+      <p>{PUBLIC_BASE_URL}</p>
     </div>
   );
 }

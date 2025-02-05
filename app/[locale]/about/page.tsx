@@ -1,3 +1,4 @@
+import { PUBLIC_BASE_URL } from '@/lib/env';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
@@ -8,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({
     locale,
-    namespace: 'Metadata.about',
+    namespace: 'metadata.about',
   });
 
   return {
@@ -17,9 +18,11 @@ export async function generateMetadata({
   };
 }
 
+export const runtime = 'edge';
+
 export default async function Page() {
   const t = await getTranslations('about');
-  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/hello`);
+  const res = await fetch(`${PUBLIC_BASE_URL}/api/hello`);
   const data = await res.json();
 
   return (

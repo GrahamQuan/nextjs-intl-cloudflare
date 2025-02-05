@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({
     locale,
-    namespace: 'Metadata.home',
+    namespace: 'metadata.home',
   });
 
   return {

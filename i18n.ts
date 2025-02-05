@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 import { getRequestConfig } from 'next-intl/server';
 
-export const defaultLocale = 'en-US';
+export const defaultLocale = 'en-US' as const;
 
 export const languages = [
   {

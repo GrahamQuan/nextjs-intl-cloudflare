@@ -44,9 +44,7 @@ export default function LocaleSwitcher() {
     >
       <SelectTrigger className='flex w-[150px] h-8 items-center gap-1 rounded-lg bg-transparent border-white/40 text-white/40 px-2 lg:h-11'>
         <img src='/icons/global.svg' className='size-5' />
-        <SelectValue placeholder='locale'>
-          {localeVal.toUpperCase()}
-        </SelectValue>
+        <SelectValue placeholder='locale'>{localeVal}</SelectValue>
       </SelectTrigger>
       <SelectContent className='max-h-fit bg-card-black'>
         {languages.map((language) => (
